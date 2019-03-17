@@ -1,0 +1,27 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config
+  profiles:
+    active: dev
+  cloud:
+    bus: #这样我们在 POST 请求 /bus/refresh 后，浏览器访问访问 /trace 端点即可看到数据，可以清晰的看到传播细节了
+      trace:
+        enable: true
+    config:
+      server:
+        git:
+          # uri: https://github.com/lynnlovemin/SpringCloudLesson.git #配置git仓库地址
+          uri: https://github.com/Confident-Liu/springCloadConfig.git
+          searchPaths: /config #配置仓库路径
+          username: Confident-Liu #访问git仓库的用户名 Confident-Liu
+          password: liujiangfeng1207 #访问git仓库的用户密码
+      label: master #配置仓库的分支
+eureka:
+  instance:
+    hostname: ${spring.cloud.client.ipAddress}
+    instanceId: ${spring.cloud.client.ipAddress}:${server.port}
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8760/eureka/

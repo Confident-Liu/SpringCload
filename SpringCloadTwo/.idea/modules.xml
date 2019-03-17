@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SpringCloadTwo.iml" filepath="$PROJECT_DIR$/SpringCloadTwo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/clintOne/clintOne.iml" filepath="$PROJECT_DIR$/clintOne/clintOne.iml" />
+      <module fileurl="file://$PROJECT_DIR$/clintTwo/clintTwo.iml" filepath="$PROJECT_DIR$/clintTwo/clintTwo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config/config.iml" filepath="$PROJECT_DIR$/config/config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feign/feign.iml" filepath="$PROJECT_DIR$/feign/feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway/gateway.iml" filepath="$PROJECT_DIR$/gateway/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/serviceOne/serviceOne.iml" filepath="$PROJECT_DIR$/serviceOne/serviceOne.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zipkin/zipkin.iml" filepath="$PROJECT_DIR$/zipkin/zipkin.iml" />
+    </modules>
+  </component>
+</project>
